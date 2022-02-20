@@ -30,7 +30,7 @@ class Skills extends React.Component {
            programming languages as :C# , Java , JS ,ES Next ,TS .
            Design Technologies as: HTML , CSS , sass , bootstrap , material ui , Responsive Design .
            Db management: ERD designing , mapping it to tables , mongo DB , firebase . 
-           web ramworks and Tools : Angular , React 'this portfolio' . Mobile Frameworks : Flutter , React Native . unit testing .
+           web Framworks and Tools : Angular , React 'this portfolio' . Mobile Frameworks : Flutter , React Native . unit testing .
         </p>
 
         <div className="row col-lg-8 col-12 mx-auto ">
@@ -50,3 +50,5 @@ class Skills extends React.Component {
 }
 
 export default Skills;
+
+
