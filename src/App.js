@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Button from "react-bootstrap/Button";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import ReactToPrint from "react-to-print";
+import Header from "./components/Header";
+import AboutMe from "./components/AboutMe/AboutMe";
+import Skills from "./components/Skills/Skills";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Footer from "./components/Footer/Footer";
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
+  render() {
+    console.log(this.Portfolio);
+    let printComponent = (
+      <ReactToPrint
+        content={() => this.componentRef}
+        trigger={() => (
+          <Button className="mt-3" variant="dark" size="lg">
+            Download resume
+          </Button>
+        )}
+      />
+    );
+    return (
+      <div
+        className="container-fluid"
+        ref={(response) => (this.componentRef = response)}
+      >
+        <Header />
+        <AboutMe
+          portfolioRef={this.componentRef}
+          printComponent={printComponent}
+        />
+        <Skills />
+        <Portfolio />
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;

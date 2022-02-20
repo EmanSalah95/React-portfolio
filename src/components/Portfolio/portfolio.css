@@ -1,0 +1,17 @@
+.portfolio{
+    font-size: 2em;
+}
+
+.card{
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grey{
+    background-color: #C1C1C1;
+}
+
+.dark{
+    background-color: #444444;
+}

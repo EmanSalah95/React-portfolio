@@ -1,0 +1,14 @@
+.title{
+    font-size: 2em;
+}
+
+i{
+    background-color: transparent;
+    border-radius: 100;
+    border:5px solid red;
+    padding: 5px;
+}
+
+i:hover{
+    background-color: rgba(167, 169, 170, 0.897);
+}
