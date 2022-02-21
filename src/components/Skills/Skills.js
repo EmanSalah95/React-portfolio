@@ -33,14 +33,14 @@ class Skills extends React.Component {
            web Framworks and Tools : Angular , React 'this portfolio' . Mobile Frameworks : Flutter , React Native . unit testing .
         </p>
 
-        <div className="row col-lg-8 col-12 mx-auto ">
+        <div className="row col-lg-8 col-12 mx-auto mt">
           <div className="col-lg-4 col-12">
             <p>My focous</p>
           </div>
 
           <div className="col-lg-8 col-12">
             {
-              skills.map( item => <ProgressSkill label={item.skill} perecentage={item.value} />)
+              skills.map( (item,index) => <ProgressSkill label={item.skill} perecentage={item.value} key={index}/>)
             }
           </div>
         </div>

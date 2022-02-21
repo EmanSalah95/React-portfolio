@@ -1,17 +1,32 @@
-.portfolio{
-    font-size: 2em;
+.portfolio {
+  font-size: 2em;
 }
 
-.card{
-    height: 150px;
-    justify-content: center;
-    align-items: center;
+.card {
+  height: 150px;
+  justify-content: center;
+  align-items: center;
 }
 
-.grey{
-    background-color: #C1C1C1;
+.grey {
+  background-color: #c1c1c1;
 }
 
-.dark{
-    background-color: #444444;
+.dark {
+  background-color: #444444;
+}
+
+.project {
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.project:hover {
+  box-shadow: 5px 0px 10px #b8b3b3;
+  transform: scale(1.06);
+  cursor: pointer;
+  /* transform: translate(20px); */
 }

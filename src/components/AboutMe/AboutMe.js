@@ -1,15 +1,12 @@
 import React from "react";
-import ReactToPrint from 'react-to-print';
 import "./aboutMeSt.css";
-import Button from "react-bootstrap/Button";
 
 class AboutMe extends React.Component {
   render() {
-    console.log("....",this.props);
     return (
       <div className="container m-5 row  mx-auto  " ref={(response) => (this.componentRef = response)}>
         <p className="text-dark about col-lg-2 col-md-2  col-12">about me</p>
-        <div class='col-lg-10 col-md-10'>
+        <div className='col-lg-10 col-md-10'>
           <p className="text-dark">
             enthusiast lady programmer , joined ITI intensive training , has bachelor Degree in Computer Science 'Helwan University'.
             clever web and mobile front end developer has more than two years of experience in programming work market , hard Worker . 

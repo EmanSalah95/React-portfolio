@@ -4,22 +4,40 @@ import Project from "./Project";
 
 class Portfolio extends React.Component {
   render() {
-    const technologies = [
-      "ES next",
-      "Bootstrap",
-      "Angular",
-      "React",
-      "React Native",
-      "Flutter",
+    const projects = [
+      {
+        label:'HTML/CSS',
+        link:'https://emansalah95.github.io/Movies/'
+      },
+      {
+        label:'Responsive',
+        link:'https://social-media-bh84xi4ab-emansalah95.vercel.app/'
+      },
+      {
+        label:'JS Twitter',
+        link:'https://youtu.be/ishqGv1OcAs'
+      },
+      {
+        label:'Angular',
+        link:'https://e-commerce-sable.vercel.app/Products'
+      },
+      {
+        label:'React Native',
+        link:'https://www.youtube.com/watch?v=4_SAC79SPO8&t=16s'
+      },
+      ,
+      {
+        label:'React',
+        link:'https://react-portfolio-ten-beige.vercel.app/'
+      },
     ];
-
     return (
       <div className="container py-5  ">
         <p className="text-dark  portfolio">Portfolio</p>
 
         <div className=" row col-12 mx-auto d-flex flex-wrap justify-content-center">
-          {technologies.map((tec, index) => (
-            <Project key={index} label={tec} />
+          {projects.map((project, index) => (
+            <Project key={index} project={project} />
           ))}
         </div>
       </div>
