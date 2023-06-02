@@ -10,4 +10,9 @@ i{
 
 i:hover{
     background-color: rgba(167, 169, 170, 0.897);
+    border-radius: 50%;
+}
+div>i{
+    font-size: 30px!important;
+    cursor: pointer;
 }

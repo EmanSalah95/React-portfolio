@@ -11,11 +11,11 @@ class Skills extends React.Component {
       },
       {
         skill:'React',
-        value:85
+        value:90
       },
       {
         skill:'React Native',
-        value:90
+        value:85
       },
       {
         skill:'flutter',

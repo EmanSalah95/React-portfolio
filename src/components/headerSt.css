@@ -16,3 +16,6 @@ h1:hover {
   cursor: pointer;
   transform: translate(20px);
 }
+.capital{
+  text-transform: capitalize;
+}

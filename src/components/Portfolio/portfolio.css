@@ -28,5 +28,6 @@
   box-shadow: 5px 0px 10px #b8b3b3;
   transform: scale(1.06);
   cursor: pointer;
-  /* transform: translate(20px); */
+  opacity: 0.8;
+  /* border: solid 3px #d8cdaf; */
 }
